@@ -1,38 +1,163 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.mainHeader{
+  background-color:rgb(40, 196, 196);
+  height: 80px;
+  display: block;
+  padding: 22px;
+  margin-bottom: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.headerLogo {
+  font-size: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.mainTitle{
+  margin-top:15px;
+  margin-bottom:10px;
+}
+
+textarea{
+  padding: 5px;
+  width: 320px;
+  height: 45vh;
+  margin-bottom: 20px;
+}
+
+body{
+  background-color: #555555;
+}
+
+header{
+  width: 100%;
+  position: absolute;
+  background-color:rgb(40, 196, 196);
+  margin-bottom: 100px;
+  top: 0;
+}
+
+h1 {
+  color:rgb(40, 196, 196);
+}
+
+.entryButton, .resetButton {
+  align-self: center;
+  vertical-align: top;
+  background-color:rgb(40, 196, 196);
   color: white;
+  border: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  height: 30px;
+  width: 60px;
+  margin-bottom: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+.resetButton {
+  margin-top: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.entryButton:active {
+  background-color:rgb(34, 152, 152);
+}
+
+.resetButton:active {
+  background-color:rgb(34, 152, 152);
+}
+
+.textControlButtonPanel {
+  display: inline;
+}
+
+.comparisonField {
+  align-self: center;
+  text-align: center;
+  width: 30%;
+  max-width: 400px;
+  min-width:200px;
+  background-color: rgb(40, 196, 196);
+  padding: 1%;
+}
+
+.choiceButtonPanel {
+  display: inline;
+}
+
+.choiceButton1, .choiceButton2 {
+  background-color: white;
+  color: rgb(40, 196, 196);
+  border: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 800;
+  margin:10px;
+  height:60px;
+  width: 160px;
+  vertical-align: top;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.choiceButton1:active {
+  background-color: #bbbbbb;
+}
+
+.choiceButton2:active {
+  background-color: #bbbbbb;
+}
+
+h2{
+  color:white;
+}
+
+.rankedList {
+  text-overflow: ellipsis;
+  white-space: pre-line;
+  font-weight: 500;
+  word-break: break-all;
+}
+
+.instructions {
+  margin-top: 15px;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+p{
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 500px) {
+
+  .headerLogo{
+    visibility: hidden;
   }
-  to {
-    transform: rotate(360deg);
+
+  textarea{
+    padding: 5px;
+    width: 45%;
+    height: 40vh;
+    margin-bottom: 20px;
   }
+
+  .instructions {
+    margin-top: 15px;
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: center;
+  }
+  
+  p{
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
 }
